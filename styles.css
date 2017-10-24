@@ -1,0 +1,31 @@
+/* Test */
+
+ul.connected {
+    margin:1em 0; padding:0;
+}
+ul.connected li {
+    display:inline-block;
+    position:relative;
+    margin:0; padding:0.5em;
+    background:#eee;
+    border:#444 1px solid;
+    cursor:pointer;
+}
+ul.connected a { text-decoration:none; color:#347; }
+ul.connected li:hover {
+    background:#eeb; box-shadow:0.2em 0.2em 0.5em rgba(0,0,0,0.3);
+}
+
+ul.connected li:not(:last-child) {
+  margin-right: 25px;
+}
+
+ul.connected li:not(:last-child):after {
+  position: absolute;
+  content: ' ';
+  left: 100%;
+  top: 0%;
+  width: 2em;
+  height: 1em;
+  border-bottom: 1px solid black;
+}

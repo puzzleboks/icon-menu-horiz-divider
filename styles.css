@@ -1,31 +1,34 @@
 /* Test */
-
-ul.connected {
-    margin:1em 0; padding:0;
-}
-ul.connected li {
-    display:inline-block;
-    position:relative;
-    margin:0; padding:0.5em;
-    background:#eee;
-    border:#444 1px solid;
-    cursor:pointer;
-}
-ul.connected a { text-decoration:none; color:#347; }
-ul.connected li:hover {
-    background:#eeb; box-shadow:0.2em 0.2em 0.5em rgba(0,0,0,0.3);
+.container {
+    /* inline-block display allows centering with text-align */
+    text-align: center;
 }
 
-ul.connected li:not(:last-child) {
-  margin-right: 25px;
+.progress-bar-row {
+    /* removes spaces so horiz lines touch icons */
+    font-size: 0px;
+    margin-top: 40px;
 }
 
-ul.connected li:not(:last-child):after {
-  position: absolute;
-  content: ' ';
-  left: 100%;
-  top: 0%;
-  width: 2em;
-  height: 1em;
-  border-bottom: 1px solid black;
+.progress-bar-item  {
+    /* using a display of inline-block for this solution, instead of table */
+    display: inline-block;
+    /* center vertically */
+    vertical-align: middle;
+}
+
+.line-connector {
+    border-bottom: 4px solid #000000;
+    /* viewport width units */
+    width: 9vw;
+}
+
+.fa {
+    font-size: 75px;
+}
+
+@media screen and (max-width: 768px) {
+    .line-connector {
+
+    }
 }

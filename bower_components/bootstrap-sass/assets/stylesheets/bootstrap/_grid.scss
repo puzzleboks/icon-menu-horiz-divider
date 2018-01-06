@@ -10,8 +10,8 @@
 .container {
   @include container-fixed;
 
-  @media (min-width: $screen-xxs-min) {
-    width: $container-xxs;
+  @media (min-width: $screen-xs-min) {
+    width: $container-xs;
   }
   @media (min-width: $screen-sm-min) {
     width: $container-sm;
@@ -51,17 +51,18 @@
 @include make-grid-columns;
 
 
+// Extra extra small grid
+//
+// Columns, offsets, pushes, and pulls for extra small devices like
+// smartphones.
+@include make-grid(xxs);
+
 // Extra small grid
 //
 // Columns, offsets, pushes, and pulls for extra small devices like
 // smartphones.
-
-// @include make-grid(xs);
-
-//test
-//
-@media (min-width: $screen-xxs-min) {
-  @include make-grid(xxs);
+@media (min-width: $screen-xs-min) {
+  @include make-grid(xs);
 }
 
 // Small grid

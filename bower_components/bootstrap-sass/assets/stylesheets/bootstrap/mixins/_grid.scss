@@ -21,20 +21,29 @@
 // Generate the extra extra small columns
 @mixin make-xxs-column($columns, $gutter: $grid-gutter-width) {
   position: relative;
-  float: left;
-  width: percentage(($columns / $grid-columns));
   min-height: 1px;
   padding-left:  ($gutter / 2);
   padding-right: ($gutter / 2);
+
+  @media (min-width: $screen-xxs-min) {
+    float: left;
+    width: percentage(($columns / $grid-columns));
+  }
 }
-@mixin make-xxs-column-offset($columns) {
-  margin-left: percentage(($columns / $grid-columns));
+@mixin make-sm-column-offset($columns) {
+  @media (min-width: $screen-xxs-min) {
+    margin-left: percentage(($columns / $grid-columns));
+  }
 }
-@mixin make-xxs-column-push($columns) {
-  left: percentage(($columns / $grid-columns));
+@mixin make-sm-column-push($columns) {
+  @media (min-width: $screen-xxs-min) {
+    left: percentage(($columns / $grid-columns));
+  }
 }
-@mixin make-xxs-column-pull($columns) {
-  right: percentage(($columns / $grid-columns));
+@mixin make-sm-column-pull($columns) {
+  @media (min-width: $screen-xxs-min) {
+    right: percentage(($columns / $grid-columns));
+  }
 }
 
 // Generate the extra small columns

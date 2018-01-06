@@ -25,10 +25,6 @@
   padding-left:  ($gutter / 2);
   padding-right: ($gutter / 2);
 
-  @media (min-width: $screen-xxs-min) {
-    float: left;
-    width: percentage(($columns / $grid-columns));
-  }
 }
 @mixin make-xxs-column-offset($columns) {
   @media (min-width: $screen-xxs-min) {
@@ -54,6 +50,11 @@
   min-height: 1px;
   padding-left:  ($gutter / 2);
   padding-right: ($gutter / 2);
+
+  @media (min-width: $screen-xs-min) {
+    float: left;
+    width: percentage(($columns / $grid-columns));
+  }
 }
 @mixin make-xs-column-offset($columns) {
   margin-left: percentage(($columns / $grid-columns));

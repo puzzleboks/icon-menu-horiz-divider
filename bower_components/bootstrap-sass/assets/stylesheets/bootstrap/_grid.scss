@@ -55,10 +55,10 @@
 //
 // Columns, offsets, pushes, and pulls for extra small devices like
 // smartphones.
-@media (max-width: $screen-xxs-max) {
-  @include make-grid(xxs);
-}
-// @include make-grid(xxs);
+// @media (max-width: $screen-xxs-max) {
+//   @include make-grid(xxs);
+// }
+@include make-grid(xxs);
 
 // Extra small grid
 //

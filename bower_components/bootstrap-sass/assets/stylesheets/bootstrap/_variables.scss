@@ -3,10 +3,6 @@ $bootstrap-sass-asset-helper: false !default;
 // Variables
 // --------------------------------------------------
 
-//Lon Test
-.lontest {
-  color: chartreuse;
-}
 
 //== Colors
 //
@@ -292,13 +288,13 @@ $zindex-modal:             1050 !default;
 //## Define the breakpoints at which your layout will change, adapting to different screen sizes.
 
 // Extra small screen / phone
-$screen-xs:                  576px !default;
-$screen-xs-min:              $screen-xs !default;
-$screen-phone:               $screen-xs-min !default;
+$screen-xxs:                  576px !default;
+$screen-xxs-min:              $screen-xxs !default;
+$screen-phone:               $screen-xxs-min !default;
 //** Deprecated `$screen-xs` as of v3.0.1
-// $screen-xs:                  480px !default;
+$screen-xs:                  480px !default;
 //** Deprecated `$screen-xs-min` as of v3.2.0
-// $screen-xs-min:              $screen-xs !default;
+$screen-xs-min:              $screen-xs !default;
 //** Deprecated `$screen-phone` as of v3.0.1
 // $screen-phone:               $screen-xs-min !default;
 
@@ -324,7 +320,7 @@ $screen-lg-min:              $screen-lg !default;
 $screen-lg-desktop:          $screen-lg-min !default;
 
 // So media queries don't overlap when required, provide a maximum
-$screen-xxs-max:             ($screen-xs-min - 1) !default;
+$screen-xxs-max:             ($screen-xxs-min - 1) !default;
 $screen-xs-max:              ($screen-sm-min - 1) !default;
 $screen-sm-max:              ($screen-md-min - 1) !default;
 $screen-md-max:              ($screen-lg-min - 1) !default;
@@ -352,7 +348,7 @@ $grid-float-breakpoint-max: ($grid-float-breakpoint - 1) !default;
 // Extra Small screen / mobile
 $container-mobile:             (576px + $grid-gutter-width) !default;
 //** For `$screen-xs-min` and up.
-$container-xs:                 $container-mobile !default;
+$container-xxs:                 $container-mobile !default;
 
 // Small screen / tablet
 $container-tablet:             (720px + $grid-gutter-width) !default;

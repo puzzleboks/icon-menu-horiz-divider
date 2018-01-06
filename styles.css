@@ -1,13 +1,14 @@
 /* Test */
-.container {
-    /* inline-block display allows centering with text-align */
-    text-align: center;
+h2 {
+   text-align: center; 
 }
 
 .progress-bar-row {
     /* removes spaces so horiz lines touch icons */
     font-size: 0px;
     margin-top: 40px;
+    /* inline-block display allows centering with text-align */
+    text-align: center;
 }
 
 .progress-bar-item  {
@@ -25,6 +26,12 @@
 
 .fa {
     font-size: 75px;
+}
+
+ol {
+    margin-top: 30px;
+    /* padding-left: 1em; */
+    /* text-indent: -1em; */
 }
 
 @media screen and (max-width: 768px) {

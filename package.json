@@ -1,0 +1,28 @@
+{
+  "name": "icon-menu-horiz-divider",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/puzzleboks/icon-menu-horiz-divider.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/puzzleboks/icon-menu-horiz-divider/issues"
+  },
+  "homepage": "https://github.com/puzzleboks/icon-menu-horiz-divider#readme",
+  "devDependencies": {
+    "gulp": "^3.9.1",
+    "gulp-bower": "0.0.13",
+    "gulp-sass": "^3.1.0"
+  },
+  "dependencies": {
+    "gulp-sourcemaps": "^2.6.3",
+    "gulp-uglifyjs": "^0.6.2"
+  }
+}

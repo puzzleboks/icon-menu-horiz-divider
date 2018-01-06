@@ -3,6 +3,10 @@ $bootstrap-sass-asset-helper: false !default;
 // Variables
 // --------------------------------------------------
 
+//Lon Test
+.lontest {
+  color: chartreuse;
+}
 
 //== Colors
 //
@@ -320,6 +324,7 @@ $screen-lg-min:              $screen-lg !default;
 $screen-lg-desktop:          $screen-lg-min !default;
 
 // So media queries don't overlap when required, provide a maximum
+$screen-xxs-max:             ($screen-xs-min - 1) !default;
 $screen-xs-max:              ($screen-sm-min - 1) !default;
 $screen-sm-max:              ($screen-md-min - 1) !default;
 $screen-md-max:              ($screen-lg-min - 1) !default;
@@ -343,6 +348,11 @@ $grid-float-breakpoint-max: ($grid-float-breakpoint - 1) !default;
 //== Container sizes
 //
 //## Define the maximum width of `.container` for different screen sizes.
+
+// Extra Small screen / mobile
+$container-mobile:             (576px + $grid-gutter-width) !default;
+//** For `$screen-xs-min` and up.
+$container-xs:                 $container-mobile !default;
 
 // Small screen / tablet
 $container-tablet:             (720px + $grid-gutter-width) !default;
